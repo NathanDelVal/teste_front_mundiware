@@ -1,0 +1,425 @@
+:root {
+    --pink: #ff0060;
+    --container-color: white;
+    --header-height:20vh;
+    --headline-fontsize: .7rem;
+}
+
+/* #949095 */
+
+body {
+    background: #fafafa;
+}
+
+body > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 156px;
+    height: auto;
+}
+
+.center-container {
+    width: 80vw;
+    margin: 0 10vw;
+}
+
+.search {
+    position: relative;
+}
+
+.search button {
+    position: absolute;
+    right:5px;
+    top: 20%;
+    background: var(--pink);
+    color: white;
+    border-radius: 50%;
+}
+
+.search button i {
+    padding: 5px;
+}
+
+.highlight-hover {
+    color: gray;
+    position: relative;
+    transition:all .3s linear;
+    overflow-x: hidden;
+    height: calc(1rem + 12px);
+}
+
+.highlight-hover:hover {
+    color: black;
+    font-weight: 500;
+}
+
+.highlight-hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--pink);
+    transition:all .3s linear;
+}
+
+.highlight-hover:hover::after {
+    right: 0;
+}
+
+.shadow-container {
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px lightgray;
+    background: var(--container-color);
+    padding: 10px;
+}
+
+.categoria, .compartilhe {
+    position:relative;
+}
+
+.categoria::before {
+    content: 'CATEGORIA';
+    display:block;
+    position:absolute;
+    top: 20px;
+    left:20px;
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    opacity:0.5;
+    transform:scale(.6);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.compartilhe::after {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    content: '\f1d8      Compartilhe';
+    padding: 5px 20px;
+    transform: scale(.6);
+    display:block;
+    background: var(--pink);
+    border-radius: 20px;
+    font-family: "Font Awesome 5 Free";
+    color: white;
+}
+
+.subtitulo-container {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: white;
+    padding: 20px;
+    text-align: start;
+    box-shadow: inset 0 -70px 100px -10px #000000;
+}
+
+.subtitulo-container > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.subtitulo-container > ul ul {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.subtitulo-container > ul ul li {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.headline {
+    text-transform: uppercase;
+    position: relative;
+    color: inherit;
+    font-size: var(--headline-fontsize);
+    font-weight: bold;
+}
+
+.headline.pink {
+    color: var(--pink);
+}
+
+.headline.before-content {
+    left: calc((var(--headline-fontsize) * .5) + 2px);
+}
+
+.headline.before-content::before {
+    content: "";
+    display: block;
+    width: calc(var(--headline-fontsize) * .5);
+    height: calc(var(--headline-fontsize) * .5);
+    background: var(--pink);
+    border-radius: 50%;
+    position: absolute;
+    top: calc((var(--headline-fontsize) * .5) * .5);
+    left: calc(-1 * (var(--headline-fontsize) * .5) - 2px);
+}
+
+.play {
+    position: relative;
+}
+
+.play::after {
+    content: '\f04b';
+    display: block;
+    position: absolute;
+    top: calc(50% - (1rem + 10px));
+    left: calc(50% - (1rem + 10px));
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    color: white;
+    padding: 10px;
+    background: var(--pink);
+    border-radius: 50%;
+}
+
+.previous, .next {
+    position: relative;
+}
+
+.previous::before {
+    content: "\f060";
+    left: calc((1rem + 5px) * .5 * -1);
+}
+
+.next::after {
+    content: '\f061';
+    right:  calc((1rem + 5px) * .5 * -1);
+}
+
+.previous::before, .next::after {
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    background: white;
+    padding: 5px;
+    color: black;
+    position: absolute;
+    top: calc(50% - (1rem + 10px));
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 3px 3px 10px lightgray;
+}
+
+[class*=custom-grid] {
+    display:grid;
+    gap: 20px;
+}
+
+.loto {
+    grid-area:loto;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+
+.loto > *:first-child p:nth-child(2) {
+    color: gray;
+}
+
+.loto ul {
+    display:grid;
+    grid-template: auto auto / repeat(10, 1fr);
+    align-content: center;
+}
+
+.loto ul li {
+    background:orange;
+    border-radius:50%;
+    padding:5px;
+}
+
+.clima {
+    grid-area:clima;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clima > *:first-child p {
+    color: gray;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.clima > *:nth-child(3) p {
+    font-size: .8rem;
+    color: orange;
+}
+
+header {
+    width: 100vw;
+    padding: 10px 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position:fixed;
+    top: 0;
+    background: #fafafa;
+    z-index:9;
+}
+
+header ul {
+    justify-content: space-between;
+}
+
+article {
+    display:flex;
+    gap:15px;
+}
+
+
+article img {
+    height:100%;
+    width:50%;
+    border-radius:20px;
+}
+
+#banner {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background: url('../img/Football-player-match_m.jpg');
+    background-position: center;
+}
+
+.custom-grid1 {
+    grid-template: 50vh / 3fr 1fr;
+}
+
+.custom-grid2 {
+    grid-template:
+    'news news news loto loto news2'
+    'news news news loto loto news2'
+    'news news news clima clima news2';
+}
+
+#orbi-tv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: black;
+    height: 60vh;
+    color: white;
+    padding: 0 10vw;
+}
+
+#orbi-tv > ul:first-child {
+    justify-content: space-between;
+}
+
+#orbi-tv button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+#orbi-tv button:not(.active) {
+    background: black;
+    color: gray;
+    border: 2px solid gray;
+}
+
+#orbi-tv button.active {
+    background: var(--pink);
+    color: white;
+    border: 2px solid var(--pink);
+}
+
+#mais-lidas {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#mais-lidas h2 {
+    font-weight: bold;
+}
+
+#mais-lidas ul {
+    justify-content: space-around;
+}
+
+#mais-lidas ul li {
+    display: flex;
+    gap: 10px;
+}
+
+#mais-lidas ul li h2 {
+    background: lightgray;
+    padding: 5px 10px;
+    color: var(--pink);
+    height: fit-content;
+}
+
+#copa-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#copa-gallery > ul {
+    display: grid;
+    grid-template: 40vh / 1fr 1fr 1fr 1fr;
+}
+
+#copa-gallery > ul > li {
+    height: 100%;
+    background: url('../img/messi.webp');
+    background-position: center;
+}
+
+.custom-grid3 {
+    display:grid;
+    grid-template: 65vh / repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1023px) {
+    .display-desk {
+        display: none !important;
+    }
+    .custom-grid1 {
+        grid-template: 50vh / auto;
+    }
+    .custom-grid2 {
+        grid-template:
+        'news'
+        'loto' 
+        'clima';
+    }
+    .loto {
+        align-items: center;
+    }
+    #mais-lidas ul {
+        flex-direction: column;
+    }
+    #copa-gallery > ul {
+        display: grid;
+        grid-template: 50vh / 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .display-mobile {
+        display: none !important;
+    }
+    body {
+        margin-top: var(--header-height);
+    }
+}
