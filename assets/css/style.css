@@ -512,7 +512,7 @@ article img {
         grid-template: 1fr 1fr 1fr / 1fr;
     }
     .custom-grid5 {
-        grid-template: 1fr 1fr / 1fr;
+        grid-template: 2fr 1fr / 1fr;
     }
     .custom-grid6 {
         grid-template: 1fr / repeat(4, 1fr);
