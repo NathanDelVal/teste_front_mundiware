@@ -190,6 +190,17 @@ body > *:not(:last-child) {
     border-radius: 50%;
 }
 
+.play.top-left::after {
+    top:10px;
+    left:10px;
+}
+
+.play.white::after {
+    background: white;
+    color: var(--pink);
+    border: 2px solid var(--pink);
+}   
+
 .previous, .next {
     position: relative;
 }
@@ -218,9 +229,22 @@ body > *:not(:last-child) {
     box-shadow: 3px 3px 10px lightgray;
 }
 
-[class*=custom-grid] {
+[class*=grid] {
     display:grid;
     gap: 20px;
+}
+
+.horoscopo-grid {
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 15px;
+}
+
+.horoscopo-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .loto {
@@ -391,7 +415,7 @@ article img {
 
 .custom-grid3 {
     display:grid;
-    grid-template: 65vh / repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 1023px) {
@@ -406,6 +430,12 @@ article img {
         'news'
         'loto' 
         'clima';
+    }
+    .custom-grid3 {
+        grid-template-columns: 1fr;
+    }
+    .horoscopo-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .loto {
         align-items: center;
