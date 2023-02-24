@@ -20,6 +20,19 @@ body > *:not(:last-child) {
     height: auto;
 }
 
+[type=radio] {
+    display: inline-block;
+    width:10px;
+    height:10px;
+    padding: 5px;
+    border-radius: 50%;
+    outline:1px solid var(--pink);
+}
+
+[type=radio]:checked {
+    background:var(--pink);
+}
+
 .center-container {
     width: 80vw;
     margin: 0 10vw;
@@ -40,6 +53,24 @@ body > *:not(:last-child) {
 
 .search button i {
     padding: 5px;
+}
+
+.article-container {
+    display:flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    gap:20px;
+}
+
+.bordered-icon {
+    border-radius:50%;
+    padding:5px;
+    outline:2px solid var(--pink);
+}
+
+img.bordered-icon {
+    width:60px;
+    height:60px;
 }
 
 .highlight-hover {
@@ -234,10 +265,33 @@ body > *:not(:last-child) {
     gap: 20px;
 }
 
+.ads {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+}
+
+.ads.vertical img {
+    width:80%;
+    height:80%;
+}
+
+.horoscopo-container {
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    justify-content:center;
+    color: black;
+    gap:20px;
+}
+
+.horoscopo-container > ul:first-child {
+    justify-content: space-between;
+}
+
 .horoscopo-grid {
-    display:grid;
     grid-template-columns: repeat(12,1fr);
-    gap: 15px;
 }
 
 .horoscopo-grid li {
@@ -290,7 +344,6 @@ body > *:not(:last-child) {
 
 header {
     width: 100vw;
-    padding: 10px 10vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -300,7 +353,20 @@ header {
     z-index:9;
 }
 
-header ul {
+footer {
+    display:flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+    background:#e9e9e9;
+    gap:20px;
+}
+
+header, footer {
+    padding: 10px 10vw;
+}
+
+header ul, footer ul {
     justify-content: space-between;
 }
 
@@ -371,9 +437,6 @@ article img {
 #mais-lidas {
     position: relative;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 #mais-lidas h2 {
@@ -414,8 +477,11 @@ article img {
 }
 
 .custom-grid3 {
-    display:grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.custom-grid4 {
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
 }
 
 @media screen and (max-width: 1023px) {
@@ -434,6 +500,13 @@ article img {
     .custom-grid3 {
         grid-template-columns: 1fr;
     }
+    .custom-grid4 {
+        grid-template: 1fr 1fr 1fr / 1fr;
+    }
+    .horoscopo-container > ul:first-child {
+        flex-direction: column;
+        align-items: center;
+    }
     .horoscopo-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -446,6 +519,14 @@ article img {
     #copa-gallery > ul {
         display: grid;
         grid-template: 50vh / 1fr;
+    }
+    .one_two-grid {
+        grid-template: auto auto / 1fr .5fr;
+    }
+    .ads img {
+        width: 50% !important;
+        height: 50% !important;
+        object-fit: contain;
     }
 }
 

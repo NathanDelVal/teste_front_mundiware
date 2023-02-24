@@ -25,7 +25,7 @@ input, button {
     border:none;
 }
 
-input:not([type=submit]):not([type=checkbox]) {
+input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
     width: 100%;
 }
 

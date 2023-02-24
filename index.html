@@ -295,7 +295,7 @@
             <i class="fab fa-youtube" style="color:red;"></i> Inscreva-se no nosso canal
         </ul>
     </section>
-    <section class="center-container shadow-container" id="mais-lidas">
+    <section class="center-container shadow-container article-container" id="mais-lidas">
         <h2>+LIDAS</h2>
         <ul>
             <li>
@@ -419,8 +419,8 @@
                 </ul>
             </li>
         </ul>
-        <div style="display:flex;align-items: center;justify-content: center;background: lightgray;">
-            <img src="./assets/img/kaiak.jpg" style="width:80%;height:50%" alt="">
+        <div class="ads vertical">
+            <img src="./assets/img/kaiak.jpg" alt="">
         </div>
         <ul style="flex-direction: column; justify-content: space-between;">
             <form
@@ -456,9 +456,8 @@
             </article>
         </ul>
     </section>
-    <section class="center-container shadow-container"
-        style="display:flex;flex-direction:column;padding:20px;justify-content:center;color: black;gap:20px">
-        <ul style="justify-content: space-between;">
+    <section class="center-container shadow-container horoscopo-container">
+        <ul>
             <li>
                 <h2>HORÓSCOPO DO DIA</h2>
             </li>
@@ -517,10 +516,10 @@
             </li>
         </ul>
     </section>
-    <section class="center-container cultura">
+    <section class="center-container" id="cultura">
         <img src="assets/img/cultura.png" style="width:120px" alt="">
         <br>
-        <div style="display:grid;grid-template:50vh / 2fr 1fr 1.5fr 1.5fr;gap:20px">
+        <div class="custom-grid4">
             <div class="subtitulo-container categoria compartilhe"
                 style="background:url(assets/img/ludmilla.jpg);background-size:cover;border-radius:20px">
                 <ul>
@@ -530,7 +529,7 @@
                     </li>
                 </ul>
             </div>
-            <ul class='display-desk' style="flex-direction:column;justify-content: space-between;">
+            <ul class='display-desk article-container'>
                 <article>
                     <div>
                         <p class="headline pink">categoria</p>
@@ -553,7 +552,7 @@
             <div style="display:flex;align-items: center;justify-content: center;background: lightgray;">
                 <img src="./assets/img/kaiak.jpg" style="width:80%;height:50%" alt="">
             </div>
-            <ul style="flex-direction: column;justify-content: space-between;">
+            <ul class="article-container">
                 <article style="display:grid;grid-template: auto / 1.5fr 2.5fr">
 
                     <img src="./assets/img/o_amor_e_o_poder_1.webp" style="width:100%" alt="">
@@ -580,19 +579,32 @@
             </ul>
         </div>
     </section>
-    <section style="display:grid;grid-template: 1fr 4fr / auto;background:var(--pink);color:white;padding:20px 10vw;height:70vh">
+    <section
+        style="display:grid;grid-template: 1fr 4fr / auto;background:var(--pink);color:white;padding:20px 10vw;height:70vh">
         <ul style="justify-content: space-between;">
             <li>
                 <img src="./assets/img/videos.png" styles="120px" alt="">
             </li>
             <li>
                 <ul>
-                    <li class="highlight-hover white">Todos os vídeos</li>
-                    <li class="highlight-hover white">Cinema</li>
-                    <li class="highlight-hover white">Música</li>
-                    <li class="highlight-hover white">Teatro</li>
-                    <li class="highlight-hover white">Entrevistas</li>
-                    <li class="highlight-hover white">Entretenimento</li>
+                    <a href='#'>
+                        <li class="highlight-hover white">Todos os vídeos</li>
+                    </a>
+                    <a href='#'>
+                        <li class="highlight-hover white">Cinema</li>
+                    </a>
+                    <a href='#'>
+                        <li class="highlight-hover white">Música</li>
+                    </a>
+                    <a href='#'>
+                        <li class="highlight-hover white">Teatro</li>
+                    </a>
+                    <a href='#'>
+                        <li class="highlight-hover white">Entrevistas</li>
+                    </a>
+                    <a href='#'>
+                        <li class="highlight-hover white">Entretenimento</li>
+                    </a>
                 </ul>
             </li>
         </ul>
@@ -653,6 +665,150 @@
             </div>
         </div>
     </section>
+    <section class="center-container custom-grid3">
+        <div class="ads vertical">
+            <img src="./assets/img/kaiak.jpg" alt="">
+        </div>
+        <ul class="article-container">
+            <article style="display:grid;grid-template: auto / 1.5fr 2.5fr">
+                <img src="./assets/img/o_amor_e_o_poder_1.webp" style="width:100%" alt="">
+                <div>
+                    <p class="headline pink">categoria</p>
+                    <p>Estréias do Amazon Prime Video em julho incluem 'Casa Gucci' e 'Spencer'</p>
+                </div>
+            </article>
+            <article style="display:grid;grid-template: auto / 1.5fr 2.5fr">
+                <img src="./assets/img/o_amor_e_o_poder_1.webp" style="width:100%" alt="">
+                <div>
+                    <p class="headline pink">categoria</p>
+                    <p>Estréias do Amazon Prime Video em julho incluem 'Casa Gucci' e 'Spencer'</p>
+                </div>
+            </article>
+            <article style="display:grid;grid-template: auto / 1.5fr 2.5fr">
+                <img src="./assets/img/o_amor_e_o_poder_1.webp" style="width:100%" alt="">
+                <div>
+                    <p class="headline pink">categoria</p>
+                    <p>Estréias do Amazon Prime Video em julho incluem 'Casa Gucci' e 'Spencer'</p>
+                </div>
+            </article>
+        </ul>
+        <div class="shadow-container article-container"
+            style="align-items: center;justify-content: space-around;">
+            <img src="assets/img/copa.png" style="width:120px;" alt="">
+            <div>
+                <i class="fas fa-arrow-left"></i>&nbsp; Grupo A &nbsp;<i class="fas fa-arrow-right"></i>
+            </div>
+            <div style="display:flex;justify-content:space-around;align-items: center;width:100%">
+                <ul>
+                    <li>QAT</li>
+                    <li><img src="./assets/img/Flag_of_Qatar_(3-2).svg.png"
+                            style="width:60px;height:60px;border-radius:50%;border:1px solid gray" alt=""></li>
+                </ul>
+                <p>1 X 1</p>
+                <ul>
+                    <li>EQU</li>
+                    <li><img src="./assets/img/Flag_of_Ecuador.png"
+                            style="width:60px;height:60px;border-radius:50%;border:1px solid gray" alt=""></li>
+                </ul>
+            </div>
+            <p>18/11/2022 - 20:00</p>
+        </div>
+    </section>
+    <section class="center-container custom-grid3">
+        <div class='shadow-container article-container'>
+            <h2>WEBSTORIES</h2>
+            <div style="display:flex;align-items: center;gap:20px;">
+                <img src="./assets/img/lu-piovani.jpg"
+                    class="bordered-icon" alt="">
+                <p>yadayadayadayadayada</p>
+            </div>
+            <div style="display:flex;align-items: center;gap:20px;">
+                <img src="./assets/img/lu-piovani.jpg"
+                    class="bordered-icon" alt="">
+                <p>yadayadayadayadayada</p>
+            </div>
+            <div style="display:flex;align-items: center;gap:20px;">
+                <img src="./assets/img/lu-piovani.jpg"
+                    class="bordered-icon" alt="">
+                <p>yadayadayadayadayada</p>
+            </div>
+        </div>
+        <div class="ads vertical">
+            <img src="./assets/img/kaiak.jpg" alt="">
+        </div>
+        <div class="shadow-container" style="display:flex;flex-direction:column;justify-content: space-around;gap:20px">
+            <h4>ENQUETE</h4>
+            <h3>Quem merece ser convocado por Tite na seleção brasileira?</h3>
+            <form action="">
+                <div>
+                    <input type="radio" name="enquete"> Pedro
+                </div>
+                <div>
+                    <input type="radio" name="enquete"> Gabigol
+                </div>
+                <div>
+                    <input type="radio" name="enquete"> Pedro e Gabigol
+                </div>
+                <div>
+                    <input type="radio" name="enquete"> Nenhum
+                </div>
+            </form>
+            <button
+                style="background: var(--pink);padding:10px 20px;color:white;width:fit-content;border-radius:20px">ENVIAR</button>
+        </div>
+    </section>
+    <footer>
+        <img src="./assets/img/orbi.png" class='logo' alt="">
+        <ul>
+            <li><i class="fab fa-instagram bordered-icon"
+                    style="color:var(--pink)"></i></li>
+            <li><i class="fab fa-facebook bordered-icon"
+                    style="color:var(--pink)"></i></li>
+            <li><i class="fab fa-youtube bordered-icon"
+                    style="color:var(--pink);"></i></li>
+            <li><img src="./assets/img/tiktok.png" class="bordered-icon"
+                    style="width: 1.5rem;height:1.5rem" alt="">
+            </li>
+        </ul>
+        <ul class='display-desk' style="width:100%">
+            <a href="#">
+                <li class="highlight-hover">Home</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Cultura</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Entretenimento</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Música</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Cinema</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Jornal</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Agenda</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">TV</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Cultura</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Entretenimento</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Música</li>
+            </a>
+            <a href="#">
+                <li class="highlight-hover">Cinema</li>
+            </a>
+        </ul>
+    </footer>
 </body>
 
 </html>
