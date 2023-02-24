@@ -279,12 +279,13 @@ header ul {
 
 article {
     display:flex;
+    font-weight: bold;
+    align-items: center;
     gap:15px;
 }
 
 
 article img {
-    height:100%;
     width:50%;
     border-radius:20px;
 }
