@@ -262,6 +262,7 @@ img.bordered-icon {
 
 [class*=grid] {
     display:grid;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -484,6 +485,13 @@ article img {
     grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
 }
 
+.custom-grid5 {
+    grid-template: auto / 1fr 1fr;
+}
+.custom-grid6 {
+    grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 1023px) {
     .display-desk {
         display: none !important;
@@ -502,6 +510,12 @@ article img {
     }
     .custom-grid4 {
         grid-template: 1fr 1fr 1fr / 1fr;
+    }
+    .custom-grid5 {
+        grid-template: 1fr 1fr / 1fr;
+    }
+    .custom-grid6 {
+        grid-template: 1fr / repeat(4, 1fr);
     }
     .horoscopo-container > ul:first-child {
         flex-direction: column;
