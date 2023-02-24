@@ -491,6 +491,11 @@ article img {
 .custom-grid6 {
     grid-template-columns: 1fr 1fr;
 }
+.custom-grid7 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'webstories ads enquete';
+}
 
 @media screen and (max-width: 1023px) {
     .display-desk {
@@ -516,6 +521,11 @@ article img {
     }
     .custom-grid6 {
         grid-template: 1fr / repeat(4, 1fr);
+    }
+    .custom-grid7 {
+        grid-template: 
+        'ads ads'
+        'webstories enquete';
     }
     .horoscopo-container > ul:first-child {
         flex-direction: column;
