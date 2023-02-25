@@ -499,6 +499,21 @@ article img {
     'webstories ads enquete';
 }
 
+.webstories {
+    grid-area:webstories;
+    align-items: center;
+}
+
+.webstories p {
+    max-width:50%;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.webstories p::after {
+    content:"...";
+}
+
 @media screen and (max-width: 1023px) {
     .display-desk {
         display: none !important;
