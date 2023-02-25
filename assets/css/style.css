@@ -398,9 +398,9 @@ article img {
 
 .custom-grid2 {
     grid-template:
-    'news news news loto loto news2'
-    'news news news loto loto news2'
-    'news news news clima clima news2';
+    'news1 news2 news2 loto loto news3'
+    'news1 news2 news2 loto loto news3'
+    'news1 news2 news2 clima clima news3';
 }
 
 #orbi-tv {
@@ -506,7 +506,8 @@ article img {
     }
     .custom-grid2 {
         grid-template:
-        'news'
+        'news1'
+        'news2'
         'loto' 
         'clima';
     }
@@ -517,10 +518,10 @@ article img {
         grid-template: 1fr 1fr 1fr / 1fr;
     }
     .custom-grid5 {
-        grid-template: 2fr 1fr / 1fr;
+        grid-template: 2fr 1fr / 100%;
     }
     .custom-grid6 {
-        grid-template: 1fr / repeat(4, 1fr);
+        grid-template: 1fr 1fr / 1fr 1fr;
     }
     .custom-grid7 {
         grid-template: 
@@ -536,6 +537,9 @@ article img {
     }
     .loto {
         align-items: center;
+    }
+    .loto ul {
+        gap: 10px;
     }
     #mais-lidas ul {
         flex-direction: column;

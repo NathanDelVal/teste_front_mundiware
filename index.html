@@ -162,12 +162,33 @@
         </div>
     </section>
     <section class="center-container custom-grid2">
-        <div
-            style="grid-area:news;display:grid;grid-template:auto auto auto / 1.5fr 2.5fr;gap:20px;align-items: center;">
+        <!-- <div style="grid-area:news;display:grid;grid-template:auto auto auto / 1.5fr 2.5fr;gap:20px;align-items: center;"> -->
+        <ul style="grid-area:news1" class="article-container">
             <article>
                 <div>
                     <p class="headline pink">categoria</p>
                     <p>Luana Piovani compartilha novo projeto com seguidores: "Tão feliz"</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <p class="headline pink">categoria</p>
+                    <p>Luana Piovani compartilha novo projeto com seguidores: "Tão feliz"</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <p class="headline pink">categoria</p>
+                    <p>Estréias do Amazon Prime Video em julho incluem "Casa Gucci" e "Spencer"</p>
+                </div>
+            </article>
+        </ul>
+        <ul style="grid-area:news2" class="article-container">
+            <article>
+                <img src="assets/img/o_amor_e_o_poder_1.webp" alt="">
+                <div>
+                    <p class="headline pink">categoria</p>
+                    <p>Estréias do Amazon Prime Video em julho incluem "Casa Gucci" e "Spencer"</p>
                 </div>
             </article>
             <article>
@@ -178,32 +199,14 @@
                 </div>
             </article>
             <article>
-                <div>
-                    <p class="headline pink">categoria</p>
-                    <p>Estréias do Amazon Prime Video em julho incluem "Casa Gucci" e "Spencer"</p>
-                </div>
-            </article>
-            <article>
-                <img src="assets/img/o_amor_e_o_poder_1.webp" alt="">
-                <div>
-                    <p class="headline pink">categoria</p>
-                    <p>Estréias do Amazon Prime Video em julho incluem "Casa Gucci" e "Spencer"</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <p class="headline pink">categoria</p>
-                    <p>Cinemateca exibe versão restaurada de "Deus e o Diabo na Terra do Sol"</p>
-                </div>
-            </article>
-            <article>
                 <img src="assets/img/Cinemateca_Brasileira,_Lg._Sen._Raul_Cardoso_-_panoramio.jpg" alt="">
                 <div>
                     <p class="headline pink">categoria</p>
                     <p>Cinemateca exibe versão restaurada de "Deus e o Diabo na Terra do Sol"</p>
                 </div>
             </article>
-        </div>
+        </ul>
+        <!-- </div> -->
         <ul class="shadow-container loto">
             <li>
                 <p>Lotomania</p>
@@ -247,7 +250,7 @@
                 <h2>24ºC</h2>
             </li>
         </ul>
-        <ul class="display-desk" style="grid-area:news2;flex-direction:column;justify-content: space-between;">
+        <ul class="display-desk article-container" style="grid-area:news3;">
             <article>
                 <div>
                     <p class="headline pink">categoria</p>
@@ -579,8 +582,7 @@
             </ul>
         </div>
     </section>
-    <section
-        style="display:grid;grid-template: 1fr 4fr / 100%;background:var(--pink);color:white;padding:20px 10vw">
+    <section style="display:grid;grid-template: 1fr 4fr / 100%;background:var(--pink);color:white;padding:20px 10vw">
         <ul style="justify-content: space-between;">
             <li>
                 <img src="./assets/img/videos.png" styles="120px" alt="">
@@ -692,8 +694,7 @@
                 </div>
             </article>
         </ul>
-        <div class="shadow-container article-container"
-            style="align-items: center;justify-content: space-around;">
+        <div class="shadow-container article-container" style="align-items: center;justify-content: space-around;">
             <img src="assets/img/copa.png" style="width:120px;" alt="">
             <div>
                 <i class="fas fa-arrow-left"></i>&nbsp; Grupo A &nbsp;<i class="fas fa-arrow-right"></i>
@@ -718,18 +719,15 @@
         <div class="shadow-container article-container" style="grid-area:webstories;align-items: center;">
             <h2>WEBSTORIES</h2>
             <div style="display:flex;align-items: center;gap:20px;">
-                <img src="./assets/img/lu-piovani.jpg"
-                    class="bordered-icon" alt="">
+                <img src="./assets/img/lu-piovani.jpg" class="bordered-icon" alt="">
                 <p>yadayadayadayadayada</p>
             </div>
             <div style="display:flex;align-items: center;gap:20px;">
-                <img src="./assets/img/lu-piovani.jpg"
-                    class="bordered-icon" alt="">
+                <img src="./assets/img/lu-piovani.jpg" class="bordered-icon" alt="">
                 <p>yadayadayadayadayada</p>
             </div>
             <div style="display:flex;align-items: center;gap:20px;">
-                <img src="./assets/img/lu-piovani.jpg"
-                    class="bordered-icon" alt="">
+                <img src="./assets/img/lu-piovani.jpg" class="bordered-icon" alt="">
                 <p>yadayadayadayadayada</p>
             </div>
         </div>
@@ -760,12 +758,9 @@
     <footer>
         <img src="./assets/img/orbi.png" class="logo" alt="">
         <ul>
-            <li><i class="fab fa-instagram bordered-icon"
-                    style="color:var(--pink)"></i></li>
-            <li><i class="fab fa-facebook bordered-icon"
-                    style="color:var(--pink)"></i></li>
-            <li><i class="fab fa-youtube bordered-icon"
-                    style="color:var(--pink);"></i></li>
+            <li><i class="fab fa-instagram bordered-icon" style="color:var(--pink)"></i></li>
+            <li><i class="fab fa-facebook bordered-icon" style="color:var(--pink)"></i></li>
+            <li><i class="fab fa-youtube bordered-icon" style="color:var(--pink);"></i></li>
             <li><img src="./assets/img/tiktok.png" class="bordered-icon"
                     style="width: 1.5rem;height:1.5rem;background:var(--pink)" alt="">
             </li>
