@@ -544,7 +544,8 @@ article img {
         grid-template: 1fr 1fr / 1fr 1fr;
     }
     .custom-grid7 {
-        grid-template: 
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
         'ads ads'
         'webstories enquete';
     }
