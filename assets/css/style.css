@@ -544,10 +544,9 @@ article img {
         grid-template: 1fr 1fr / 1fr 1fr;
     }
     .custom-grid7 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+        grid-template: 
         'ads ads'
-        'webstories enquete';
+        'webstories enquete' auto / 1fr 1fr;
     }
     .horoscopo-container > ul:first-child {
         flex-direction: column;
